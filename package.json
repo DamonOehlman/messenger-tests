@@ -1,0 +1,26 @@
+{
+  "name": "messenger-tests",
+  "version": "0.0.0",
+  "description": "Reusable tape test suite for messenger tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/messengers/test.git"
+  },
+  "keywords": [
+    "messenger",
+    "messaging",
+    "tests"
+  ],
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/messengers/test/issues"
+  },
+  "dependencies": {
+    "tape": "~1.0.4"
+  }
+}
