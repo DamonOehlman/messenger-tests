@@ -8,9 +8,9 @@ module.exports = function(creator) {
     t.ok(messenger = creator(), 'new instance created');
   });
 
-  test('has a send function', function(t) {
+  test('has a write function', function(t) {
     t.plan(1);
-    t.equal(typeof messenger.send, 'function', 'available');
+    t.equal(typeof messenger.write, 'function', 'available');
   });
 
   test('has a close function', function(t) {
@@ -38,9 +38,9 @@ module.exports = function(creator) {
     t.equal(typeof messenger.removeListener, 'function', 'available');
   });
 
-  test('can call send without error', function(t) {
+  test('can call write without error', function(t) {
     t.plan(1);
-    messenger.send('hello');
+    messenger.write('hello');
     t.pass('passed');
   });
 

@@ -10,7 +10,7 @@ module.exports = function(creator) {
       t.equal(data, 'hello');
     });
 
-    messengers[0].send('hello');
+    messengers[0].write('hello');
   });
 
   test('1 --> 0', function(t) {
@@ -20,7 +20,7 @@ module.exports = function(creator) {
       t.equal(data, 'hello');
     });
 
-    messengers[1].send('hello');
+    messengers[1].write('hello');
   });
 
   test('close 1', function(t) {
@@ -40,6 +40,6 @@ module.exports = function(creator) {
       t.pass('message was not received');
     }, 100);
 
-    messengers[0].send('hello');
+    messengers[0].write('hello');
   });
 };
