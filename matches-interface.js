@@ -8,6 +8,11 @@ module.exports = function(creator) {
     t.ok(messenger = creator(), 'new instance created');
   });
 
+  test('has a connected property', function(t) {
+    t.plan(1);
+    t.notEqual(typeof messenger.connected, 'undefined', 'has a connected property');
+  });
+
   test('has a write function', function(t) {
     t.plan(1);
     t.equal(typeof messenger.write, 'function', 'available');
