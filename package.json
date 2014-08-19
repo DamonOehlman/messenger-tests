@@ -1,6 +1,6 @@
 {
   "name": "messenger-tests",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Reusable tape test suite for messenger tests",
   "main": "index.js",
   "scripts": {
