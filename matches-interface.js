@@ -58,6 +58,6 @@ module.exports = function(creator) {
   test('can close the messenger', function(t) {
     t.plan(1);
     messenger.close();
-    t.pass('closed');
+    t.equal(messenger.connected, false, 'closed');
   });
 };

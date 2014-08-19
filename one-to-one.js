@@ -32,11 +32,14 @@ module.exports = function(creator) {
   test('0 --> 1 fails', function(t) {
     t.plan(1);
 
-    messengers[1].once('data', function(data) {
+    function gotData(data) {
       t.fail('should not have received data');
-    });
+    }
+
+    messengers[1].once('data', gotData);
 
     setTimeout(function() {
+      messengers[1].removeListener('data', gotData);
       t.pass('message was not received');
     }, 500);
 
