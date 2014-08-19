@@ -38,7 +38,7 @@ module.exports = function(creator) {
 
     setTimeout(function() {
       t.pass('message was not received');
-    }, 100);
+    }, 500);
 
     messengers[0].write('hello');
   });
