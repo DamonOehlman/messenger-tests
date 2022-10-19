@@ -21,6 +21,6 @@
     "url": "https://github.com/messengers/test/issues"
   },
   "dependencies": {
-    "tape": "^2.12.2"
+    "tape": "^4.0.0"
   }
 }
